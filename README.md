@@ -58,8 +58,8 @@ Create a `.env` file:
 
 ```env
 PORT=8000
-MONGODB_URI=your_mongo_uri
-JWT_SECRET=your_jwt_secret
+MONGO_URI= 
+ACCESS_TOKEN_SECRET=
 ```
 
 Start the backend:
