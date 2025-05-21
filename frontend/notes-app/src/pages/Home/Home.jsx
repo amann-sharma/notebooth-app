@@ -68,7 +68,6 @@ const Home = () => {
   const getAllNotes = async () => {
     try {
       const response = await axiosInstance.get('/get-all-notes');
-      console.log('Fetched Notes Response:', response.data); // Debugging log
 
       if (response.data && Array.isArray(response.data.notes)) {
         setAllNotes(response.data.notes);

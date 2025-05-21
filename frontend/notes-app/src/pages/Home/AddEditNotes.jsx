@@ -1,9 +1,15 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { MdClose } from 'react-icons/md';
 import TagInput from '../../components/Input/TagInput';
 import axiosInstance from '../../utils/axiosInstance';
 
-const AddEditNotes = ({ noteData, getAllNotes, type, onClose, showToastMessage }) => {
+const AddEditNotes = ({
+  noteData,
+  getAllNotes,
+  type,
+  onClose,
+  showToastMessage,
+}) => {
   const [title, setTitle] = useState(noteData?.title || '');
   const [content, setContent] = useState(noteData?.content || '');
   const [tags, setTags] = useState(noteData?.tags || []);
@@ -18,7 +24,7 @@ const AddEditNotes = ({ noteData, getAllNotes, type, onClose, showToastMessage }
         tags,
       });
       if (response.data && response.data.note) {
-        showToastMessage("Note Added Successfully!")
+        showToastMessage('Note Added Successfully!');
         getAllNotes();
         onClose();
       }
@@ -43,7 +49,7 @@ const AddEditNotes = ({ noteData, getAllNotes, type, onClose, showToastMessage }
         tags,
       });
       if (response.data && response.data.note) {
-        showToastMessage("Note Updated Successfully!")
+        showToastMessage('Note Updated Successfully!');
         getAllNotes();
         onClose();
       }
@@ -89,7 +95,7 @@ const AddEditNotes = ({ noteData, getAllNotes, type, onClose, showToastMessage }
         <input
           type="text"
           className="text-2xl text-slate-950 outline-none"
-          placeholder="Go to gym at 5"
+          placeholder="Write your title here..."
           value={title}
           onChange={({ target }) => setTitle(target.value)}
         />
