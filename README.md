@@ -73,7 +73,7 @@ npm run dev
 ### 3. Frontend Setup
 
 ```bash
-cd ../frontend/notes-app
+cd ../frontend
 npm install
 npm run dev
 ```
