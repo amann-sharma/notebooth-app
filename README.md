@@ -7,12 +7,12 @@ A full-stack Notes App built using **React**, **Node.js**, **Express**, and **Mo
 ## 📁 Project Structure
 
 ```
-notes-app/
+notebooth-app/
 ├── backend/                 # Express.js server and API logic
 │   ├── models/              # Mongoose schemas
 │   ├── index.js             # Server entry point
 │   └── utils.js             # Helper functions
-├── frontend/notes-app/      # Vite + React frontend
+├── frontend                 # Vite + React frontend
 │   ├── src/                 # React components and logic
 │   ├── tailwind.config.js
 │   └── vite.config.js
