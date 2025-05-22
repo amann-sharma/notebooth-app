@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import ProfileInfo from '../cards/profileInfo';
+import ProfileInfo from '../cards/ProfileInfo';
 import SearchBar from '../SearchBar/SearchBar';
 
 const Navbar = ({ userInfo, onSearchNote, handleClearSearch }) => {
