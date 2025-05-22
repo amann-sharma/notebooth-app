@@ -27,7 +27,7 @@ app.use(
 
 // Sample Route
 app.get('/', (req, res) => {
-  res.json({ data: 'hello' });
+  res.redirect('/login');
 });
 
 //backend ready now integration
