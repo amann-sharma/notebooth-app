@@ -1,0 +1,14 @@
+{
+  "name": "notebooth-app",
+  "version": "1.0.0",
+  "description": "A full-stack Notes App built using **React**, **Node.js**, **Express**, and **MongoDB**. It allows users to register, log in, create, search, and manage their notes securely.",
+  "main": "index.js",
+  "scripts": {
+    "build": "npm install --prefix backend && npm install --prefix frontend && npm run build --prefix frontend",
+    "start": "npm run start --prefix backend",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

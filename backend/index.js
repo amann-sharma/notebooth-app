@@ -1,4 +1,5 @@
 require('dotenv').config();
+const path = require('path'); //deployement
 
 const config = require('./config.json');
 const mongoose = require('mongoose');
@@ -322,6 +323,13 @@ app.get('/search-notes/', authenticateToken, async (req, res) => {
       message: 'Internal Server Error',
     });
   }
+});
+
+//deployement
+app.use(express.static(path.join(__dirname, '../frontend/dist')));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.join(__dirname, '../frontend/dist/index.html'));
 });
 
 // Start Server

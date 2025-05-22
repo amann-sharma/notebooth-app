@@ -18,7 +18,8 @@ axiosInstance.interceptors.request.use(
     return config;
   },
   (error) => {
-    return Promises.reject(error);
+    return Promise.reject(error); // ✅ fixed typo
   }
 );
+
 export default axiosInstance;
