@@ -1,4 +1,4 @@
-# 📝 NoteBooth
+# 📝 NoteBooth https://notebooth.onrender.com/
 
 A full-stack Notes App built using **React**, **Node.js**, **Express**, and **MongoDB**. It allows users to register, log in, create, search, and manage their notes securely.
 
